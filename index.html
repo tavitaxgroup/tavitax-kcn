@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đầu tư & Tối ưu thuế cùng Tavitax | Đất Khu Công Nghiệp</title>
+    <meta name="description" content="Tavitax cung cấp dịch vụ bán đất khu công nghiệp, tư vấn tối ưu thuế doanh nghiệp.">
+    <!-- Google Fonts: Be Vietnam Pro for perfect Vietnamese support, Montserrat for headings (Vinhomes luxury style) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header id="header">
+        <div class="container header-inner">
+            <a href="#hero" class="logo">
+                <img src="assets/logo.png" alt="Tavitax Logo" class="logo-img">
+            </a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Trang chủ</a>
+                <a href="#kcn-list" class="nav-link">Mua Bán KCN</a>
+                <a href="#projects" class="nav-link">Dự án</a>
+                <a href="#tax-incentives" class="nav-link">Ưu đãi thuế</a>
+            </nav>
+            <div class="header-cta">
+                <a href="#lead-magnet" class="btn btn-primary btn-sm">Tải Bảng Giá & Data</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container hero-content-wrapper">
+            <div class="hero-content luxury-card">
+                <div class="hero-badge">Hệ Sinh Thái Môi Giới & Tư Vấn Cấp Cao</div>
+                <h1 class="hero-title">Đầu tư + Tối ưu thuế cùng <span class="text-gold">Tavitax</span></h1>
+                <p class="hero-subtitle">Nền tảng giao dịch bất động sản công nghiệp chuẩn mực. Mua bán, sang nhượng nhanh chóng kèm chiến lược tối ưu dòng tiền bài bản theo chuẩn doanh nghiệp lớn.</p>
+                <div class="hero-cta-group">
+                    <a href="#lead-magnet" class="btn btn-primary">Nhận Data Miễn Phí <i class="ph ph-download-simple"></i></a>
+                    <a href="#kcn-list" class="btn btn-outline">Lọc Tìm Đất KCN <i class="ph ph-sliders"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KCN List Section with Advanced Filters -->
+    <section id="kcn-list" class="kcn-section section-light-grey">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Cơ Sở Dữ Liệu <span class="text-gold">Đất KCN Toàn Quốc</span></h2>
+                <div class="divider"></div>
+                <p>Khám phá quỹ đất tiềm năng sẵn sàng giao dịch với vị trí đắc địa và chính sách hoàn thiện.</p>
+            </div>
+
+            <!-- Advanced Filter Bar -->
+            <div class="filter-bar luxury-shadow">
+                <div class="filter-group">
+                    <label><i class="ph ph-map-trifold"></i> Khu vực</label>
+                    <select id="filter-region">
+                        <option value="all">Tất cả khu vực</option>
+                        <option value="north">Miền Bắc (Hải Phòng...)</option>
+                        <option value="central">Miền Trung (Quảng Nam...)</option>
+                        <option value="south">Miền Nam (Bình Dương...)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="ph ph-arrows-out-line"></i> Diện tích</label>
+                    <select id="filter-area">
+                        <option value="all">Mọi diện tích</option>
+                        <option value="small">Dưới 5 Ha</option>
+                        <option value="medium">5 - 50 Ha</option>
+                        <option value="large">Trên 50 Ha</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label><i class="ph ph-money"></i> Giá / m²</label>
+                    <select id="filter-price">
+                        <option value="all">Mọi mức giá</option>
+                        <option value="low">Dưới 1.2 Triệu VNĐ</option>
+                        <option value="mid">1.2 - 3.0 Triệu VNĐ</option>
+                        <option value="high">Trên 3.0 Triệu VNĐ</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-search"><i class="ph ph-magnifying-glass"></i> Lọc Dự Án</button>
+            </div>
+
+            <!-- KCN Grid Database -->
+            <div class="kcn-grid">
+                <!-- Card 1 -->
+                <div class="kcn-card luxury-shadow" data-region="north" data-area="large" data-price="mid">
+                    <div class="kcn-image kcn-1">
+                        <div class="kcn-tag text-uppercase">Miền Bắc</div>
+                    </div>
+                    <div class="kcn-info">
+                        <h3>KCN VSIP Hải Phòng</h3>
+                        <div class="kcn-meta">
+                            <span><i class="ph-fill ph-map-pin text-gold"></i> Thuỷ Nguyên, Hải Phòng</span>
+                            <span class="text-navy font-weight-bold"><i class="ph-fill ph-money text-success"></i> 2.7 - 3.2 Triệu VNĐ / m²</span>
+                        </div>
+                        <div class="kcn-specs">
+                            <div class="spec-tag"><i class="ph ph-scales"></i> Sổ hồng 50 năm</div>
+                            <div class="spec-tag"><i class="ph ph-road-horizon"></i> Đã hoàn thiện 100%</div>
+                            <div class="spec-tag text-gold"><i class="ph ph-shield-check"></i> Miễn thuế 4 năm</div>
+                        </div>
+                        <a href="#lead-magnet" class="btn btn-outline btn-block text-center mt-4">Tải Chi Tiết Dự Án</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="kcn-card luxury-shadow" data-region="south" data-area="middle" data-price="high">
+                    <div class="kcn-image kcn-2">
+                        <div class="kcn-tag text-uppercase">Miền Nam</div>
+                    </div>
+                    <div class="kcn-info">
+                        <h3>KCN Phú Mỹ, BR-VT</h3>
+                        <div class="kcn-meta">
+                            <span><i class="ph-fill ph-map-pin text-gold"></i> Tân Thành, BR-VT</span>
+                            <span class="text-navy font-weight-bold"><i class="ph-fill ph-money text-success"></i> 3.5 - 4.0 Triệu VNĐ / m²</span>
+                        </div>
+                        <div class="kcn-specs">
+                            <div class="spec-tag"><i class="ph ph-scales"></i> Đất sạch có sẵn</div>
+                            <div class="spec-tag"><i class="ph ph-road-horizon"></i> Gần cảng Thị Vải</div>
+                            <div class="spec-tag text-gold"><i class="ph ph-shield-check"></i> Giảm thuế Nhập khẩu</div>
+                        </div>
+                        <a href="#lead-magnet" class="btn btn-outline btn-block text-center mt-4">Tải Chi Tiết Dự Án</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="kcn-card luxury-shadow" data-region="south" data-area="large" data-price="mid">
+                    <div class="kcn-image kcn-3">
+                        <div class="kcn-tag text-uppercase">Miền Nam</div>
+                    </div>
+                    <div class="kcn-info">
+                        <h3>KCN Long Đức, Đồng Nai</h3>
+                        <div class="kcn-meta">
+                            <span><i class="ph-fill ph-map-pin text-gold"></i> Long Thành, Đồng Nai</span>
+                            <span class="text-navy font-weight-bold"><i class="ph-fill ph-money text-success"></i> 3.1 - 3.7 Triệu VNĐ / m²</span>
+                        </div>
+                        <div class="kcn-specs">
+                            <div class="spec-tag"><i class="ph ph-scales"></i> Chuẩn quốc tế</div>
+                            <div class="spec-tag"><i class="ph ph-road-horizon"></i> Cấp điện, nước mạnh</div>
+                            <div class="spec-tag text-gold"><i class="ph ph-shield-check"></i> Thuế 10% trong 15 năm</div>
+                        </div>
+                        <a href="#lead-magnet" class="btn btn-outline btn-block text-center mt-4">Tải Chi Tiết Dự Án</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Magnet & CRM Form System -->
+    <section id="lead-magnet" class="lead-magnet-section section-white">
+        <div class="container">
+            <div class="lead-magnet-wrapper luxury-shadow rounded-lg overflow-hidden flex-row">
+                <div class="lead-magnet-text vinhomes-blue-bg text-white padding-large">
+                    <div class="project-badge text-gold"><i class="ph-fill ph-gift"></i> Đặc quyền nhà đầu tư</div>
+                    <h2 class="text-white mt-2">Nhận Báo Cáo <br><span class="text-gold">Bảng Giá Đất KCN 2026</span></h2>
+                    <p class="mt-4 opacity-90">Cung cấp miễn phí bản đánh giá đầy đủ nhất hệ sinh thái KCN trên toàn quốc, cập nhật trực tiếp nội khu.</p>
+                    <ul class="project-features mt-4">
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Chi tiết giá theo m2 từng KCN trọng điểm.</li>
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Tỷ lệ lấp đầy trực tiếp từ CĐT.</li>
+                        <li><i class="ph-fill ph-check-circle text-gold"></i> Tư vấn chuyển nhượng chuyên sâu kèm theo định hướng.</li>
+                    </ul>
+                </div>
+                <div class="lead-magnet-form-wrapper padding-large bg-white">
+                    <h3 class="text-navy">Đăng ký nhận tài liệu <i class="ph-fill ph-envelope-open text-gold"></i></h3>
+                    <p class="form-desc text-muted mt-2 mb-4">Hệ thống sẽ gửi File PDF trực tiếp vào Email & Zalo của quý khách qua nền tảng CRM bảo mật 100%.</p>
+                    <form id="crm-lead-form" class="crm-form">
+                        <div class="form-group">
+                            <input type="text" id="lead-name" placeholder="Họ và Tên *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="lead-phone" placeholder="Số điện thoại Zalo / WhatsApp *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="lead-email" placeholder="Email nhận file (Không bắt buộc)">
+                        </div>
+                        <div class="form-group">
+                            <select id="lead-need" required>
+                                <option value="" disabled selected>Nhu cầu của quý khách? *</option>
+                                <option value="buy">Mua đất xây xưởng</option>
+                                <option value="invest">Mua đầu tư sang nhượng kiếm lời</option>
+                                <option value="agent">Tìm dự án môi giới hợp tác</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Gửi Yêu Cầu & Nhận Ưu Đãi</button>
+                    </form>
+                    <div class="form-footer mt-4 text-center text-muted text-sm">
+                        <i class="ph-fill ph-shield-check text-success"></i> Cam kết bảo mật thông tin chuẩn Tavitax
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="tax-incentives" class="services-section section-light-grey">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Tối Ưu Hoá Thuế BĐS <br>& <span class="text-gold">Bảo Vệ Lợi Nhuận</span></h2>
+                <div class="divider"></div>
+                <p>Khung ưu đãi thuế tốt nhất và giải pháp tư vấn chia tách doanh thu môi giới chuyên nghiệp.</p>
+            </div>
+            <div class="services-wrapper mt-5">
+                <div class="services-visual">
+                    <img src="assets/consulting.png" alt="Dịch vụ Tavitax" class="rounded-lg luxury-shadow img-fluid w-100">
+                </div>
+                <div class="services-content">
+                    <div class="service-list">
+                        <div class="service-item luxury-box">
+                            <div class="service-icon"><i class="ph-fill ph-check-shield text-navy"></i></div>
+                            <div>
+                                <h4 class="text-navy">Mô hình doanh nghiệp chuẩn Big4</h4>
+                                <p class="text-muted">Tách hợp đồng tư vấn và chuyển nhượng thành pháp nhân hoặc dòng thu khác để tránh khung thuế ác ý.</p>
+                            </div>
+                        </div>
+                        <div class="service-item luxury-box">
+                            <div class="service-icon"><i class="ph-fill ph-calculator text-navy"></i></div>
+                            <div>
+                                <h4 class="text-navy">Ưu đãi thuế nội khu</h4>
+                                <p class="text-muted">Miễn thuế thu nhập 4 năm, giảm 50% trong 9 năm và ưu đãi thuế máy móc chuyên sâu cho FDI.</p>
+                            </div>
+                        </div>
+                        <div class="service-item luxury-box">
+                            <div class="service-icon"><i class="ph-fill ph-tree-structure text-navy"></i></div>
+                            <div>
+                                <h4 class="text-navy">Tránh rủi ro cá nhân đứng tên bán</h4>
+                                <p class="text-muted">Bảo vệ quyền lợi của cá nhân môi giới hay bán lướt sóng qua việc thành lập công ty dịch vụ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Chat Widgets -->
+    <div class="floating-chat-container">
+        <a href="https://zalo.me/your_zalo_oa" target="_blank" class="chat-btn zalo-btn">
+            <div class="chat-icon"><strong>Zalo</strong></div>
+            <span class="chat-tooltip">Chat Zalo</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer vinhomes-blue-bg text-white text-center padding-large">
+        <div class="container">
+            <a href="#hero" class="logo mb-4" style="display: inline-block;">
+                <img src="assets/logo.png" alt="Tavitax Logo" class="logo-img footer-logo">
+            </a>
+            <p class="opacity-90">© 2026 Tavitax KCN Land. Tiêu chuẩn Bất Động Sản Công Nghiệp Hàng Đầu.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
